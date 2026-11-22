@@ -1,0 +1,15 @@
+services:
+  web:
+    build: .
+    environment:
+      PORT: "8000"
+      STORAGE: sqlite
+      DATA_FILE: /data/counter.db
+      GREETING: "${GREETING} --- Compose :3"
+    ports:
+      - "127.0.0.1:${PORT}:8000"
+    volumes:
+      - aaaaaaa:/data
+
+volumes:
+  aaaaaaa:
