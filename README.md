@@ -26,7 +26,7 @@ soup@lenovo-legion-7-soup ~/h/i/d/hw_3_ipr_meow (main)> curl -fsS http://127.0.0
 ```
 
 Проверка логов:
-```console
+```
 soup@lenovo-legion-7-soup ~/h/i/d/hw_3_ipr_meow (main)> docker logs ipr-web
 2026-11-18 19:56:11,751 listening port=8000 storage=sqlite
 2026-11-18 19:56:54,076 http 172.17.0.1 "GET / HTTP/1.1" 200 -
@@ -154,5 +154,4 @@ web-1  | 2026-11-22 16:50:59,794 listening port=8000 storage=sqlite
 web-1  | 2026-11-22 16:53:43,480 http 172.18.0.1 "GET / HTTP/1.1" 200 -
 web-1  | 2026-11-22 16:53:53,717 http 172.18.0.1 "POST /increment HTTP/1.1" 200 -
 web-1  | 2026-11-22 16:53:56,265 http 172.18.0.1 "GET / HTTP/1.1" 200 -
-
 ```
